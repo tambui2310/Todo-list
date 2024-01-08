@@ -35,7 +35,6 @@ class App
     function UrlProcess()
     {
         return isset($_GET['url']) ? explode("/", filter_var(trim($_GET["url"], "/"))) : '/';
-        // return explode("/", filter_var(trim($_GET["url"], "/")));
     }
 
 }
